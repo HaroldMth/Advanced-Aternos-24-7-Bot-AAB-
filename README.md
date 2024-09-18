@@ -1,10 +1,40 @@
-Minecraft Bot for Aternos Server(ATRB)
-This repository contains a Node.js Minecraft bot designed to connect to an Aternos Minecraft server, automatically respawn on death, and handle periodic disconnections and reconnections. The bot is built using the mineflayer library and includes scheduling functionality to manage disconnections and reconnections effectively.
+# Minecraft Bot for Aternos Server
 
-Features
-Dynamic Username: The bot connects with a randomly generated username every time it starts.
-Automatic Respawn: The bot automatically respawns if it dies in the game.
-Scheduled Reconnection: The bot reconnects with a new username every 10 minutes.
-Nightly Disconnection: The bot disconnects for 25 seconds during specified night hours to simulate periodic downtime.
+This repository contains a Node.js bot designed to connect to an Aternos Minecraft server using the `mineflayer` library. The bot automatically handles reconnections, respawns, and periodic downtime.
 
-Can easyly used in repl.it
+## Features
+
+- **Dynamic Username:** Connects with a new randomly generated username each time it starts.
+- **Automatic Respawn:** Respawns the bot automatically upon death.
+- **Periodic Reconnection:** Reconnects with a new username every 10 minutes.
+- **Nightly Disconnection:** Disconnects for 25 seconds between 12 AM and 6 AM to simulate downtime.
+
+## Installation
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/yourusername/minecraft-bot.git
+   cd minecraft-bot
+Install Dependencies: Make sure you have Node.js installed. Then, run:
+bash
+Copy code
+npm install
+Configuration
+Update Server Details: Edit bot.js to set your Minecraft server address and port.
+
+Replit Configuration (Optional): If using Replit, ensure your .replit file includes:
+
+ini
+Copy code
+modules = ["nodejs-20"]
+run = "node bot.js"
+Usage
+Start the bot with:
+
+
+node bot.js
+Contributing
+Contributions are welcome! Please submit issues or pull requests to improve the bot.
+
+License
+This project is licensed under the MIT License.
