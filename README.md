@@ -6,3 +6,5 @@ Dynamic Username: The bot connects with a randomly generated username every time
 Automatic Respawn: The bot automatically respawns if it dies in the game.
 Scheduled Reconnection: The bot reconnects with a new username every 10 minutes.
 Nightly Disconnection: The bot disconnects for 25 seconds during specified night hours to simulate periodic downtime.
+
+Can easyly used in repl.it
