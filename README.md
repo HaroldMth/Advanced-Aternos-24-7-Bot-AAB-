@@ -13,7 +13,7 @@ This repository contains a Node.js bot designed to connect to an Aternos Minecra
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/minecraft-bot.git
+   git clone [https://github.com/yourusername/minecraft-bot.git](https://github.com/junied20/ATRB.git)
    cd minecraft-bot
 Install Dependencies: Make sure you have Node.js installed. Then, run:
 
