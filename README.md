@@ -1,34 +1,72 @@
-# Minecraft Bot for Aternos Server
-
-This repository contains a Node.js bot designed to connect to an Aternos Minecraft server using the `mineflayer` library. The bot automatically handles reconnections, respawns, and periodic downtime.
+# Minecraft Bot
 
 ## Features
 
-- **Dynamic Username:** Connects with a new randomly generated username each time it starts.
-- **Automatic Respawn:** Respawns the bot automatically upon death.
-- **Periodic Reconnection:** Reconnects with a new username every 10 minutes.
-- **Nightly Disconnection:** Disconnects for 25 seconds between 12 AM and 6 AM for villagers to sleep.
+- **Random Username Generation**: Each bot connection uses a unique, randomly generated username.
+- **Auto-Reconnect**: Automatically reconnects the bot after 10 minutes if disconnected.
+- **Sleep at Night**: Attempts to sleep in the nearest bed if it's night in Minecraft.
+- **Error Handling**: Disconnects and attempts to reconnect if the bot encounters errors or is kicked.
+- **Flexible Configurations**: Easily modify server address, port, and Minecraft version.
 
-## Installation
+## Instructions
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/junied20/ATRB.git
-   cd minecraft-bot
-Install Dependencies: Make sure you have Node.js installed. Then, run:
+### Setup
 
-npm install
-Configuration
-Update Server Details: Edit bot.js to set your Minecraft server address and port.
+1. **Install Node.js**
+   - Download and install Node.js from [nodejs.org](https://nodejs.org/).
 
-Replit Configuration (Optional): If using Replit, ensure your .replit file includes:
+2. **Create a Project Directory**
+   - Create a directory for your project and navigate into it:
+     ```sh
+     mkdir minecraft-bot
+     cd minecraft-bot
+     ```
 
-modules = ["nodejs-20"]
-run = "node bot.js"
-Usage
-Start the bot with:
+3. **Initialize a Node.js Project**
+   - Initialize a new Node.js project and install dependencies:
+     ```sh
+     npm init -y
+     npm install mineflayer node-schedule
+     ```
 
-node bot.js
-Contributing
-Contributions are welcome! Please submit issues or pull requests to improve the bot.
+4. **Use The Bot Script**
+   - Download the file file named `bot.js`
 
+5. **Run the Bot**
+   - Run the script using Node.js:
+     ```sh
+     node bot.js
+     ```
+
+### Replit Setup
+
+1. **Create a Replit Account**
+   - Sign up or log in at [Replit](https://replit.com/).
+
+2. **Create a New Repl**
+   - Click on “Create Repl” and select the "Node.js" template.
+
+3. **Upload the Files**
+   - Upload your `bot.js` file to the Replit environment. You can use the "Upload File" button on the left panel.
+
+4. **Install Dependencies**
+   - Open the Replit Shell (bottom panel) and run:
+     ```sh
+     npm install mineflayer node-schedule
+     ```
+
+5. **Run the Bot**
+   - In the Shell, start the bot by running:
+     ```sh
+     node bot.js
+     ```
+
+### Notes
+
+- Ensure your server allows bot connections and does not have anti-bot measures.
+- Adjust the Minecraft server `host`, `port`, and `version` in `bot.js` as needed.
+
+### Troubleshooting
+
+- **Connection Errors**: Verify server address and port. Check server logs for more details.
+- **Sleeping Issues**: Ensure it's night in the game and the bot can access a bed.
