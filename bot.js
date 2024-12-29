@@ -12,10 +12,10 @@ function getRandomUsername() {
 
 function connectBot() {
     const bot = mineflayer.createBot({
-        host: 'onlyforlegends.aternos.me', // Replace with your server address
-        port: 16911,                        // Replace with your server port
+        host: 'Nooobcraft-ns8x.aternos.me', // Replace with your server address
+        port: 64798,                        // Replace with your server port
         username: getRandomUsername(),
-        version: '1.19.4'                   // Specify the Minecraft version
+        version: '1.21.4'                   // Specify the Minecraft version
     });
 
     bot.on('login', () => {
